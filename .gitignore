@@ -1,0 +1,16 @@
+# Dependências
+node_modules/
+dist/
+.output/
+
+# Logs e arquivos de sistema
+*.log
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vite
+.vite/
