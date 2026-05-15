@@ -77,7 +77,7 @@ export function HomeScreen({ config, setConfig, onStart }) {
                         <div className="grid grid-cols-2 gap-2">
                             {[
                                 { id: 'pressure_line_space', l: 'pressure_line_space' }, { id: 'mc_staff_to_keys', l: 'mc_staff_to_keys' },
-                                { id: 'pressure_step_skip', l: 'pressure_step_skip' }, { id: 'mc_keys_to_staff', l: 'mc_keys_to_staff' }
+                                { id: 'pressure_step_skip', l: 'pressure_step_skip' }, { id: 'mc_keys_to_staff', l: 'mc_keys_to_staff' },
                                 { id: 'pressure_odd_even', l: 'pressure_odd_even' }, { id: 'single_note', l: 'single_note' },
                                 { id: 'match_pairs', l: 'match_pairs' }, { id: 'match_pairs_single', l: 'match_pairs_single' },
                                 { id: 'match_pairs_abstract', l: 'match_pairs_abstract' }, { id: 'sequence', l: 'sequence' },
