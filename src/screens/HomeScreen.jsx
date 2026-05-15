@@ -76,13 +76,12 @@ export function HomeScreen({ config, setConfig, onStart }) {
                         <label className="block text-xs font-bold text-stone-400 mb-2 uppercase tracking-wider">{t('exercises')}</label>
                         <div className="grid grid-cols-2 gap-2">
                             {[
-                                { id: 'pressure_line_space', l: 'pressure_line_space' }, { id: 'mc_staff_to_keys', l: 'mc_staff_to_keys' },
-                                { id: 'pressure_step_skip', l: 'pressure_step_skip' }, { id: 'mc_keys_to_staff', l: 'mc_keys_to_staff' },
-                                { id: 'pressure_odd_even', l: 'pressure_odd_even' }, { id: 'single_note', l: 'single_note' },
-                                { id: 'match_pairs', l: 'match_pairs' }, { id: 'match_pairs_single', l: 'match_pairs_single' },
-                                { id: 'match_pairs_abstract', l: 'match_pairs_abstract' }, { id: 'sequence', l: 'sequence' },
-                                { id: 'pressure_line_space', l: 'pressure_line_space' }, { id: 'pressure_odd_even', l: 'pressure_odd_even' },
-                                { id: 'guided_interval', l: 'guided_interval' }, { id: 'chord', l: 'chord' }
+                                { id: 'single_note', l: 'single_note' }, { id: 'guided_interval', l: 'guided_interval' },
+                                { id: 'sequence', l: 'sequence' }, { id: 'chord', l: 'chord' },
+                                { id: 'mc_staff_to_keys', l: 'mc_staff_to_keys' }, { id: 'mc_keys_to_staff', l: 'mc_keys_to_staff' },
+                                { id: 'match_pairs_single', l: 'match_pairs_single' }, { id: 'match_pairs', l: 'match_pairs' },
+                                { id: 'match_pairs_abstract', l: 'match_pairs_abstract' }, { id: 'pressure_line_space', l: 'pressure_line_space' },
+                                { id: 'pressure_odd_even', l: 'pressure_odd_even' }, { id: 'pressure_step_skip', l: 'pressure_step_skip' }
                             ].map(t_obj => (
                                 <button key={t_obj.id} onClick={() => toggleType(t_obj.id)}
                                     className={`py-2 px-2 rounded-xl font-bold text-xs transition-all border-2 ${config.types.includes(t_obj.id) ? 'bg-stone-700 border-themePrimary text-white' : 'bg-transparent border-stone-700 text-stone-500 hover:border-stone-500'}`}>
